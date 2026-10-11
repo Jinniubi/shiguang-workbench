@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>拾光工作台</title>
+<meta name="description" content="拾光工作台：商品信息查询与推广链接转换工具，服务于自有货盘的选品与商品资料整理。">
+<style>
+  :root {
+    --ink: #16201f;
+    --ink-soft: #55605f;
+    --line: #e2e7e6;
+    --bg: #f6f8f7;
+    --card: #ffffff;
+    --accent: #14524e;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: system-ui, -apple-system, "Segoe UI", "Microsoft YaHei", "PingFang SC", sans-serif;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { width: 100%; max-width: 960px; margin: 0 auto; padding: 0 24px; }
+
+  header.bar { background: var(--card); border-bottom: 1px solid var(--line); }
+  .bar-inner { display: flex; align-items: center; gap: 12px; height: 64px; }
+  .mark { width: 30px; height: 30px; border-radius: 7px; background: var(--accent); display: grid; place-items: center; flex: 0 0 auto; }
+  .mark svg { width: 18px; height: 18px; display: block; }
+  .brand { font-size: 16px; font-weight: 600; }
+
+  .hero { background: var(--card); border-bottom: 1px solid var(--line); padding: 64px 0 56px; }
+  .hero h1 { margin: 0 0 12px; font-size: 34px; line-height: 1.25; font-weight: 700; }
+  .hero .lede { margin: 0 0 16px; font-size: 18px; color: var(--ink-soft); }
+  .hero .sub { margin: 0; max-width: 640px; font-size: 15px; color: var(--ink-soft); }
+
+  section.band { padding: 56px 0; }
+  h2 { font-size: 20px; margin: 0 0 20px; font-weight: 600; }
+
+  .grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+  .grid article {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 20px;
+  }
+  .grid h3 { margin: 0 0 8px; font-size: 16px; font-weight: 600; }
+  .grid p { margin: 0; font-size: 14px; color: var(--ink-soft); }
+
+  .about { background: var(--card); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .about p { margin: 0 0 12px; font-size: 15px; color: var(--ink-soft); max-width: 720px; }
+  .about p:last-child { margin-bottom: 0; }
+
+  footer { padding: 32px 0 48px; }
+  footer .wrap { font-size: 14px; color: var(--ink-soft); }
+
+  @media (max-width: 720px) {
+    .hero { padding: 44px 0 40px; }
+    .hero h1 { font-size: 26px; }
+    .grid { grid-template-columns: 1fr; }
+    section.band { padding: 40px 0; }
+  }
+</style>
+</head>
+<body>
+<header class="bar">
+  <div class="wrap bar-inner">
+    <span class="mark" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linejoin="round">
+        <path d="M12 3 20.5 8v8L12 21 3.5 16V8z"/>
+        <path d="M12 12v9"/>
+        <path d="M12 12 20.5 8"/>
+        <path d="M12 12 3.5 8"/>
+      </svg>
+    </span>
+    <span class="brand">拾光工作台</span>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <h1>拾光工作台</h1>
+      <p class="lede">商品信息查询与推广链接转换工具</p>
+      <p class="sub">面向自有货盘的选品与商品资料整理。帮助使用者把商品与店铺的公开信息集中查清，并将可推广的商品链接转换成推广链接，便于后续分发与归档。</p>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <h2>主要功能</h2>
+      <div class="grid">
+        <article>
+          <h3>商品信息查询</h3>
+          <p>按关键词或商品标识查询商品及店铺的公开信息，用于选品比对。</p>
+        </article>
+        <article>
+          <h3>推广链接转换</h3>
+          <p>把可推广的普通商品链接转换成推广链接，方便分发与记录。</p>
+        </article>
+        <article>
+          <h3>货盘资料整理</h3>
+          <p>把查询到的商品资料汇总整理，形成可复用的选品档案。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="band about">
+    <div class="wrap">
+      <h2>关于本工具</h2>
+      <p>拾光工作台是一款自用型商品信息工具，通过官方开放接口获取商品与店铺的公开数据，用于自有货盘的选品与资料整理。</p>
+      <p>本工具不提供商品交易、代购或支付服务，也不代表或隶属于任何电商平台。</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>联系方式：待填写</p>
+  </div>
+</footer>
+</body>
+</html>
